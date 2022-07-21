@@ -40,7 +40,7 @@ tests = [
                         1594706524, 1594706524, 1594706579, 1594706641],
               'tutor': [1594700035, 1594700364, 1594702749, 1594705148,
                         1594705149, 1594706463]},
-     'answer': 3577
+     'answer': 6757
     },
     {
      'data': {'lesson': [1594692000, 1594695600],
@@ -52,7 +52,6 @@ tests = [
 
 if __name__ == '__main__':
     for i, test in enumerate(tests):
-        print('test')
         test_answer = appearance(test['data'])
         assert test_answer == test['answer'], (
             f'Error on test case {i}, got'
